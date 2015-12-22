@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		93F78FF11C28FF3F0010A26A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78FF01C28FF3F0010A26A /* AppDelegate.swift */; };
-		93F78FF31C28FF3F0010A26A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78FF21C28FF3F0010A26A /* ViewController.swift */; };
+		93F78FF31C28FF3F0010A26A /* ThumbExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78FF21C28FF3F0010A26A /* ThumbExpenseViewController.swift */; };
 		93F78FF61C28FF3F0010A26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F78FF41C28FF3F0010A26A /* Main.storyboard */; };
 		93F78FF81C28FF3F0010A26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F78FF71C28FF3F0010A26A /* Assets.xcassets */; };
 		93F78FFB1C28FF3F0010A26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F78FF91C28FF3F0010A26A /* LaunchScreen.storyboard */; };
 		93F790061C28FF3F0010A26A /* ThumbExpenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F790051C28FF3F0010A26A /* ThumbExpenseTests.swift */; };
+		93F790111C2901030010A26A /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F790101C2901030010A26A /* ThumbView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		93F78FED1C28FF3F0010A26A /* ThumbExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F78FF01C28FF3F0010A26A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93F78FF21C28FF3F0010A26A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93F78FF21C28FF3F0010A26A /* ThumbExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbExpenseViewController.swift; sourceTree = "<group>"; };
 		93F78FF51C28FF3F0010A26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93F78FF71C28FF3F0010A26A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F78FFA1C28FF3F0010A26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		93F790011C28FF3F0010A26A /* ThumbExpenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThumbExpenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F790051C28FF3F0010A26A /* ThumbExpenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbExpenseTests.swift; sourceTree = "<group>"; };
 		93F790071C28FF3F0010A26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F790101C2901030010A26A /* ThumbView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				93F78FF01C28FF3F0010A26A /* AppDelegate.swift */,
-				93F78FF21C28FF3F0010A26A /* ViewController.swift */,
+				93F78FF21C28FF3F0010A26A /* ThumbExpenseViewController.swift */,
 				93F78FF41C28FF3F0010A26A /* Main.storyboard */,
+				93F790101C2901030010A26A /* ThumbView.swift */,
 				93F78FF71C28FF3F0010A26A /* Assets.xcassets */,
 				93F78FF91C28FF3F0010A26A /* LaunchScreen.storyboard */,
 				93F78FFC1C28FF3F0010A26A /* Info.plist */,
@@ -197,7 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F78FF31C28FF3F0010A26A /* ViewController.swift in Sources */,
+				93F78FF31C28FF3F0010A26A /* ThumbExpenseViewController.swift in Sources */,
+				93F790111C2901030010A26A /* ThumbView.swift in Sources */,
 				93F78FF11C28FF3F0010A26A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
