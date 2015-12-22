@@ -8,11 +8,19 @@
 
 import UIKit
 
+@IBDesignable
 class ThumbExpenseViewController: UIViewController {
 
+    @IBOutlet weak var thumbView: ThumbView! {
+        didSet {
+            thumbView.addGestureRecognizer(UITapGestureRecognizer(target: thumbView, action: "showPoint:"))
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //print("current view has width:\(bounds.size.width)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +28,6 @@ class ThumbExpenseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 

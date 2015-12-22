@@ -19,15 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3y-IC-60O" customClass="ThumbView" customModule="ThumbExpense" customModuleProvider="target">
-                                <rect key="frame" x="380" y="380" width="200" height="200"/>
+                                <rect key="frame" x="280" y="280" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="06H-HY-nlN"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="C1z-62-Ryo"/>
                                     <constraint firstAttribute="width" constant="200" id="IEl-Y6-sM8"/>
                                     <constraint firstAttribute="height" constant="200" id="LhY-Y2-nZz"/>
+                                    <constraint firstAttribute="height" constant="300" id="aos-Nv-RCB"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="g5n-2N-QCx"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="i1x-o9-MS7"/>
+                                    <constraint firstAttribute="width" constant="300" id="iOF-eH-cbG"/>
                                     <constraint firstAttribute="width" constant="200" id="nVP-PQ-Xqx"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pQR-St-i9S"/>
                                 </constraints>
@@ -35,6 +37,8 @@
                                     <mask key="constraints">
                                         <exclude reference="06H-HY-nlN"/>
                                         <exclude reference="C1z-62-Ryo"/>
+                                        <exclude reference="IEl-Y6-sM8"/>
+                                        <exclude reference="LhY-Y2-nZz"/>
                                         <exclude reference="g5n-2N-QCx"/>
                                         <exclude reference="i1x-o9-MS7"/>
                                         <exclude reference="nVP-PQ-Xqx"/>
@@ -49,6 +53,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="f3y-IC-60O" secondAttribute="trailing" id="ihO-XE-geY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="thumbView" destination="f3y-IC-60O" id="f2b-s6-y8S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
